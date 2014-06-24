@@ -43,5 +43,25 @@ namespace JavascriptDemo.Controllers
         {
             return View();
         }
+
+        public ActionResult RegularExpressions()
+        {
+            return View();
+        }
+
+        public ActionResult Dates()
+        {
+            return View();
+        }
+
+        public ActionResult Jsons()
+        {
+            return View();
+        }
+
+        public ActionResult Maths()
+        {
+            return View();
+        }
     }
 }

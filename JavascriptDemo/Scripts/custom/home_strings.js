@@ -29,3 +29,6 @@ write(undefined, 'lyric.slice(1,10): ' + lyric.slice(1, 10));
 
 write('Split');
 write(undefined, lyric.split(""));
+
+write('ParseFloat');
+write(undefined, parseFloat("45"));

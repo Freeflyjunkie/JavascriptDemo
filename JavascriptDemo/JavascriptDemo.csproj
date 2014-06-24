@@ -130,11 +130,15 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\custom\common.js" />
     <Content Include="Scripts\custom\home_arrays.js" />
+    <Content Include="Scripts\custom\home_dates.js" />
     <Content Include="Scripts\custom\home_flows.js" />
     <Content Include="Scripts\custom\home_functions.js" />
     <Content Include="Scripts\custom\home_index.js" />
+    <Content Include="Scripts\custom\home_jsons.js" />
+    <Content Include="Scripts\custom\home_maths.js" />
     <Content Include="Scripts\custom\home_numbers.js" />
     <Content Include="Scripts\custom\home_objects.js" />
+    <Content Include="Scripts\custom\home_regularexpressions.js" />
     <Content Include="Scripts\custom\home_strings.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -144,9 +148,16 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\moment-with-langs.js" />
+    <Content Include="Scripts\moment-with-langs.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Home\Jsons.cshtml">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

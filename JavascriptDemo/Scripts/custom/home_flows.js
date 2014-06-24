@@ -1,22 +1,4 @@
-﻿function write(title, message) {
-    if (title !== undefined) {
-        document.getElementById('output').innerHTML += '<strong>' + title + '</strong>' + "</br>";
-    }
-
-    if (message !== undefined) {
-        if (message !== null) {
-            if (message instanceof Array) {
-                for (var i = 0; i < message.length; i++) {
-                    document.getElementById('output').innerHTML += message[i] + "</br>";
-                }
-            } else {
-                document.getElementById('output').innerHTML += message + "</br>";
-            }
-        }
-    }
-}
-
-// Blocks do not provide variable scope
+﻿// Blocks do not provide variable scope
 write('Blocks Do Not Provide Variable Scope');
 write('Variables inside of a block are available outside of the block as well', '');
 

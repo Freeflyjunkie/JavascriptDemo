@@ -1,21 +1,4 @@
-﻿function write(title, message) {
-    if (title !== undefined) {
-        document.getElementById('output').innerHTML += '<strong>' + title + '</strong>' + "</br>";
-    }
-
-    if (message !== undefined) {
-        if (message !== null) {
-            if (message instanceof Array) {
-                for (var i = 0; i < message.length; i++) {
-                    document.getElementById('output').innerHTML += message[i] + "</br>";
-                }
-            } else {
-                document.getElementById('output').innerHTML += message + "</br>";
-            }
-        }
-    }
-}
-//write('Function' + write);
+﻿//write('Function' + write);
 
 // Everything is an object except string, number, boolean and undefined
 // No class construct in javascript

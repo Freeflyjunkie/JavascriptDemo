@@ -63,5 +63,10 @@ namespace JavascriptDemo.Controllers
         {
             return View();
         }
+
+        public ActionResult Draw()
+        {
+            return View();
+        }
     }
 }

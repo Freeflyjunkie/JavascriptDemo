@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Draw";
+}
+
+<h2>Draw</h2>
+
+<style>
+    #theCanvas {
+        background-image: radial-gradient(30px 30px, #FFF, #EEF);
+    }
+</style>
+<canvas id="theCanvas" width="640" height="480"></canvas>
+
+@section scripts
+{
+    <script src="~/Scripts/custom/home_draw.js"></script>
+}

@@ -28,5 +28,12 @@ javaScriptDemoLib = {
                 }
             }
         }
+    },
+    loadAdditonalOutput: function(div, htmlPage) {
+        $(div).load(htmlPage, function(responseText, textStatus, jqXhr) {
+            if (textStatus === 'success') {
+                alert('load succeeded!');
+            }
+        });
     }
 });

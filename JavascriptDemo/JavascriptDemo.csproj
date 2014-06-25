@@ -125,6 +125,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Html\functions.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -133,6 +134,7 @@
     <Content Include="Scripts\custom\home_dates.js" />
     <Content Include="Scripts\custom\home_flows.js" />
     <Content Include="Scripts\custom\home_functions.js" />
+    <Content Include="Scripts\custom\home_functions_p.js" />
     <Content Include="Scripts\custom\home_index.js" />
     <Content Include="Scripts\custom\home_jsons.js" />
     <Content Include="Scripts\custom\home_maths.js" />
@@ -156,6 +158,9 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Home\Jsons.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Home\_Functions.cshtml">
       <SubType>Code</SubType>
     </Content>
     <Content Include="Web.config" />

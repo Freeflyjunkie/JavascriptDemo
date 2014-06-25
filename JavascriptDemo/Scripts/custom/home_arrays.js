@@ -1,8 +1,10 @@
-﻿var empty = [];
-write('Empty Array');
-write(undefined, empty.length);
+﻿$(document).ready(function () {
+    var empty = [];
+    javaScriptDemoLib.writeTitle('Empty Array');
+    javaScriptDemoLib.writeMessage(empty.length);
 
-var letters = ['a', 'b', 'c', 'd'];
-write('Enumeration');
-write(undefined, letters);
+    var letters = ['a', 'b', 'c', 'd'];
+    javaScriptDemoLib.writeTitle('Enumeration');
+    javaScriptDemoLib.writeMessage(letters);
+});
 

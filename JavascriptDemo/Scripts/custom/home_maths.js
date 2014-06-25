@@ -1,6 +1,8 @@
-﻿write(undefined, 'abs');
-write(undefined, 'floor');
-write(undefined, 'ceil');
-write(undefined, 'pow');
-write(undefined, 'random');
-write(undefined, 'round');
+﻿$(document).ready(function () {
+    javaScriptDemoLib.writeTitle('abs');
+    javaScriptDemoLib.writeTitle('floor');
+    javaScriptDemoLib.writeTitle('ceil');
+    javaScriptDemoLib.writeTitle('pow');
+    javaScriptDemoLib.writeTitle('random');
+    javaScriptDemoLib.writeTitle('round');
+});

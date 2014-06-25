@@ -1,8 +1,9 @@
-﻿write('Parsing JSON');
-var jsonString = '{ "books": [{ "title": "Frankenstien", "author": "Mary Shelley", "genres" : ["horror", "gothic"] }, { "title": "Moby Dick", "author": "Mary Torres", "genres" : ["adventure", "sea"] }] }';
-write('', 'JSON String: ' + jsonString);
+﻿$(document).ready(function () {
+    javaScriptDemoLib.writeTitle('Parsing JSON');
+    var jsonString = '{ "books": [{ "title": "Frankenstien", "author": "Mary Shelley", "genres" : ["horror", "gothic"] }, { "title": "Moby Dick", "author": "Mary Torres", "genres" : ["adventure", "sea"] }] }';
+    javaScriptDemoLib.writeMessage('JSON String: ' + jsonString);
 
-var withJSON = JSON.parse(jsonString);
-write('', 'using Parse: ' + withJSON.books[1].genres[0]);
-
-write('', 'using stringify: ' + JSON.stringify(withJSON));
+    var withJson = JSON.parse(jsonString);
+    javaScriptDemoLib.writeMessage('Using Parse: ' + withJson.books[1].genres[0]);
+    javaScriptDemoLib.writeMessage('Using stringify: ' + JSON.stringify(withJson));
+});

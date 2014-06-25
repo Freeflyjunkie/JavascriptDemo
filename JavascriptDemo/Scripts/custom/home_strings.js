@@ -1,34 +1,33 @@
-﻿write('Escape');
+﻿$(document).ready(function () {
+    javaScriptDemoLib.writeTitle('Line Break');
+    javaScriptDemoLib.writeMessage('line one \\n line two');
 
-// line break
-alert('line one\nline two');
+    javaScriptDemoLib.writeTitle('Escape');
+    javaScriptDemoLib.writeMessage('line one \\n line two');
+    javaScriptDemoLib.writeMessage('The quick brown fox\'s den');
+    javaScriptDemoLib.writeMessage('\"The quick brown fox\" has quotes around it!');
+    javaScriptDemoLib.writeMessage('copyright symbol \u00A9');
+    
+    javaScriptDemoLib.writeTitle('Eric CharAt 2');    
+    var eric = "Eric";
+    javaScriptDemoLib.writeMessage('The second character is: ' + eric.charAt(2));
 
-// escape character
-write(undefined, 'The quick brown fox\'s den');
-write(undefined, ' \"The quick brown fox\" has quotes around it!');
-write(undefined, 'copyright symbol \u00A9');
+    javaScriptDemoLib.writeTitle('Searching');
+    javaScriptDemoLib.writeMessage('for C in Eric: ' + eric.search(/c/));
 
-write('Eric CharAt 2');
+    javaScriptDemoLib.writeTitle('Replace');
+    var lyric = "3 oh 3 it's a magic number";
+    javaScriptDemoLib.writeMessage("Original var: " + lyric);
+    javaScriptDemoLib.writeMessage('lyric.replace("3", "4") :' + lyric.replace("3", "4"));
+    javaScriptDemoLib.writeMessage('lyric.replace(/3/, "4"):' + lyric.replace(/3/, "4"));
+    javaScriptDemoLib.writeMessage('lyric.replace(/3/g, "4"):' + lyric.replace(/3/g, "4"));
+    
+    javaScriptDemoLib.writeTitle('Slice');
+    javaScriptDemoLib.writeMessage('lyric.slice(1,10): ' + lyric.slice(1, 10));
 
-var eric = "Eric";
-write(undefined, 'The second character is ' + eric.charAt(2));
+    javaScriptDemoLib.writeTitle('Split');
+    javaScriptDemoLib.writeMessage('Split: ' + lyric.split(""));
 
-write('Searching for C in Eric');
-write(undefined, eric.search(/c/));
-
-write('Replace');
-var lyric = "3 oh 3 it's a magic number";
-write(undefined, "Original var: " + lyric);
-write(undefined, 'lyric.replace("3", "4") :' + lyric.replace("3", "4"));
-write(undefined, 'lyric.replace(/3/, "4"):' + lyric.replace(/3/, "4"));
-write(undefined, 'lyric.replace(/3/g, "4"):' + lyric.replace(/3/g, "4"));
-
-
-write('Slice');
-write(undefined, 'lyric.slice(1,10): ' + lyric.slice(1, 10));
-
-write('Split');
-write(undefined, lyric.split(""));
-
-write('ParseFloat');
-write(undefined, parseFloat("45"));
+    javaScriptDemoLib.writeTitle('ParseFloat');
+    javaScriptDemoLib.writeMessage('Parse "45": ' + parseFloat("45"));
+});

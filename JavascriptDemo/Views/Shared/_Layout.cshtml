@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - My JavaScript Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("styles", required: false)
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -31,6 +32,7 @@
                     <li>@Html.ActionLink("Json", "Jsons", "Home")</li>
                     <li>@Html.ActionLink("Math", "Maths", "Home")</li>
                     <li>@Html.ActionLink("Draw", "Draw", "Home")</li>
+                    <li>@Html.ActionLink("Events", "Events", "Home")</li>
                 </ul>
             </div>
         </div>

@@ -133,6 +133,7 @@
     <Content Include="Scripts\custom\home_arrays.js" />
     <Content Include="Scripts\custom\home_dates.js" />
     <Content Include="Scripts\custom\home_draw.js" />
+    <Content Include="Scripts\custom\home_events.js" />
     <Content Include="Scripts\custom\home_flows.js" />
     <Content Include="Scripts\custom\home_functions.js" />
     <Content Include="Scripts\custom\home_functions_p.js" />
@@ -188,6 +189,7 @@
     <Content Include="Views\Home\Libraries.cshtml" />
     <Content Include="Views\Home\Maths.cshtml" />
     <Content Include="Views\Home\Draw.cshtml" />
+    <Content Include="Views\Home\Events.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

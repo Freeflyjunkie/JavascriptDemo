@@ -37,4 +37,6 @@
     javaScriptDemoLib.writeMessage("apple == apple: " + ("apple" == "apple"));
     javaScriptDemoLib.writeMessage("16 === '16': " + (16 === "16"));
     javaScriptDemoLib.writeMessage("16 == '16': " + (16 == "16"));
+
+    
 });

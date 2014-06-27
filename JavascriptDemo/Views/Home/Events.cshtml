@@ -1,18 +1,31 @@
-﻿<br/>
-<span id="output"></span>
-<div class="row clickable">
-    <section id="WorkArea" class="clickable col-lg-1">
+﻿<br />
+<div class="row">
+    <section id="Title" class="col-lg-3">
+        <span id="output"></span>
+        <input id="ClearButton" type="button" value="Clear" class="btn btn-xs btn-info" />
+    </section>
+</div>
+<br />
+<div class="row clickable red-border">
+    <section id="WorkArea" class="clickable col-lg-6 col-md-6 col-sm-6 col-xs-6 blue-border">
         <h5 class="clickable lead">Work Area</h5>
         <hr />
-        <p class="clickable">Test Text</p>
-        <input type="button" class="clickable" value="Click Me" />
+        <p class="clickable orange-border">Test Text</p>
+        <input type="button" class="clickable btn btn-xs btn-info" value="Click Me" />
     </section>
-    <section id="Messages" class="col-lg-offset-1 col-lg-1">
+    <section id="Messages" class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-5 col-xs-5 blue-border">
         <h5 class="lead">Messages</h5>
         <hr />
-    </section>    
+    </section>
 </div>
-
+<br />
+<input id="LoadButton" type="button" value="Load" class="btn btn-xs btn-info" />&nbsp;&nbsp;<span id="LoadingStatus" class="lead hidden">Everything is loaded</span>
+<br />
+<div class="row">
+    <div id="DeferredDiv1" class="deferred-div col-lg-4 col-md-4 col-sm-4"></div>
+    <div id="DeferredDiv2" class="deferred-div col-lg-4 col-md-4 col-sm-4"></div>
+    <div id="DeferredDiv3" class="deferred-div col-lg-4 col-md-4 col-sm-4"></div>
+</div>
 @section scripts
 {
     <script src="~/Scripts/custom/home_events.js"></script>
@@ -20,15 +33,39 @@
 @section styles
 {
     <style>
-        #WorkArea, #Messages {            
+        .deferred-div {
             background-image: -moz-radial-gradient(30px 30px, #FFF, #EEF);
-            border: 1px solid black;
             width: 300px;
-            height: 400px;            
+            height: 400px;
+            overflow-y: auto;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        #Title {
+            background-image: -moz-radial-gradient(30px 30px, #FFF, #EEF);
+        }
+
+        #WorkArea, #Messages {
+            background-image: -moz-radial-gradient(30px 30px, #FFF, #EEF);
+            width: 300px;
+            height: 400px;
             overflow-y: auto;
             padding: 5px;
         }
-       
+
+        .red-border {
+            border: 5px solid red;
+        }
+
+        .blue-border {
+            border: 3px solid blue;
+        }
+
+        .orange-border {
+            border: 1px solid orange;
+        }
+
         .clickable {
             cursor: pointer;
         }

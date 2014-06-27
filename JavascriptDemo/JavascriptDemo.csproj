@@ -125,6 +125,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Html\deferred1.html" />
+    <Content Include="Html\deferred2.html" />
+    <Content Include="Html\deferred3.html" />
     <Content Include="Html\functions.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

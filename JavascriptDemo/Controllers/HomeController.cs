@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
 
 namespace JavascriptDemo.Controllers
 {
     public class HomeController : Controller
     {
+        public JsonResult GetCustomers()
+        {
+            return (Json(new {Name = "Eric Torres"}, JsonRequestBehavior.AllowGet ));
+        }
         public ActionResult Index()
         {
             return View();
